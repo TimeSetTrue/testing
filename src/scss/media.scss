@@ -1,0 +1,265 @@
+$colorTextWhite: #fff;
+$colorTexBlack: #373737;
+
+@media screen and (max-width: 1200px) {
+    .team__wrapp_list {
+      gap: 30px 100px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    h1 {
+      font-size: 45px;
+      line-height: 60px;
+    }
+    h2 {
+      font-size: 34px;
+      line-height: 37px;
+    }
+    h3 {
+      font-size: 28px;
+      line-height: 30px;
+    }
+    h4 {
+      font-size: 20px;
+      line-height: 22px;
+    }
+    .reviews-arrow-prev, .reviews-arrow-next {
+      width: 70px;
+      height: 70px;
+    }
+    .footer__top_menu li {
+      margin-right: 30px;
+    }
+    .team__wrapp_list {
+      grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 800px) {
+    .banner {
+        padding-bottom: 100px;
+        &__grid {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            &_img {
+              max-width: 400px;
+            }
+        }
+    }
+    .acquaintance__info {
+        grid-template-columns: 1fr;
+        &_center {
+          height: 1px;
+          margin: 50px 0;
+          background: #6a6a6a;
+          width: 50%;
+        }
+    }
+    .choice_wrapp_list {
+        grid-template-columns: 1fr 1fr;
+    }
+    .choice,
+    .team,
+    .faq,
+    .subscribe,
+    .reviews,
+    .practice,
+    .acquaintance {
+        padding-bottom: 100px;
+    }
+    .practice__wrapp_list-item::before {
+        border-radius: 8px;
+    }
+    .faq__wrapp_block {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+    .footer__top {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .subscribe__wrapp {
+        padding: 60px 25px;
+    }
+    .faq__wrapp_block p {
+        max-width: 100%;
+    }
+    .header__flex_menu-mobile {
+      display: block;
+    }
+    .header__flex_menu {
+      display: none;
+      background: $colorTextWhite;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 40%;
+      height: 100%;
+      padding: 20px;
+      z-index: 999;
+    }
+    .header__flex_menu-mobile.active {
+      z-index: 9999;
+      top: 20px;
+      right: 20px;
+      position: absolute;
+    }
+    .header__flex_menu-mobile.active span,
+    .header__flex_menu-mobile.active::after,
+    .header__flex_menu-mobile.active::before {
+      background-color:  $colorTexBlack;;
+    }
+    .header__flex_menu-mobile.active::before  {
+        top: calc(50% - 1px);
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    .header__flex_menu-mobile.active span {
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    .header__flex_menu-mobile.active::after  {
+        bottom: 50%;
+        opacity: 0;
+    }
+    .header__flex_btn {
+      margin-left: auto;
+    }
+
+    .header__flex_menu ul {
+      flex-direction: column;
+    }
+    .header__flex_menu li {
+      margin: 0 0 15px 0;
+      a {
+        color: $colorTexBlack;
+      }
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .practice__wrapp_list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        &-item {
+          margin-bottom: 15px;
+        }
+    }
+    .footer__bottom ul {
+        flex-direction: column;
+        align-items: center;
+        li {
+          margin: 0 0 15px 0;
+        }
+        li:last-child {
+          margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+      font-size: 35px;
+      line-height: 50px;
+    }
+    h2 {
+      font-size: 28px;
+      line-height: 33px;
+    }
+    h3 {
+      font-size: 24px;
+      line-height: 26px;
+    }
+    h4 {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    .team__wrapp_list {
+        grid-template-columns: 1fr;
+    }
+    .reviews__wrapp_top {
+        h2 {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+        flex-direction: column;
+        align-items: self-start;
+        margin-bottom: 40px;
+    }
+    .reviews-arrow-prev, .reviews-arrow-next {
+        width: 50px;
+        height: 50px;
+    }
+    .team h2 {
+        margin-bottom: 40px;
+    }
+    .subscribe__wrapp {
+      form {
+        flex-direction: column;
+        input {
+          width: auto;
+          border-radius: 8px !important;
+        }
+        button {
+          border-radius: 8px;
+        }
+      }
+    }
+    .choice_wrapp_list {
+        grid-template-columns: 1fr;
+    }
+    .banner__grid_text {
+      form {
+        display: block;
+        button {
+          position: static;
+          width: 100%;
+        }
+        input {
+            padding: 24px 24px 24px 62px;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+      }
+    }
+    .acquaintance {
+      padding: 60px 0;
+    }
+    .choice, .team, .faq, .subscribe, .reviews, .practice, .acquaintance {
+      padding-bottom: 50px;
+    }
+    .choice h2 {
+      margin-bottom: 50px;
+    }
+    .choice_wrapp_list-item .btn-yellow {
+      width: 100%;
+      text-align: center;
+    }
+    .footer__top_menu ul {
+      flex-direction: column;
+      align-items: center;
+      li {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+    .footer__bottom {
+      margin-top: 50px;
+      li {
+        font-size: 16px;
+      }
+    }
+    .faq__accord_item h4 {
+      max-width: 80%;
+    }
+    .header__flex_btn a {
+      padding: 10px 15px;
+    }
+    .header {
+      padding: 20px 0;
+    }
+}
